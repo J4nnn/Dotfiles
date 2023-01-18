@@ -1,0 +1,61 @@
+env:
+  # TERM variable
+  TERM: 'xterm-256color'
+
+# Window configuration
+window:
+  padding:
+    x: 10
+    y: 10
+  decorations: none
+  dimensions:
+    columns: 80
+    lines: 35
+  opacity: 0.9
+
+  scrolling:
+    # Maximum number of lines in the scrollback buffer.
+    # Specifying '0' will disable scrolling.
+    history: 1000
+
+    # Scrolling distance multiplier
+    multiplier: 3
+
+
+# Font configuration
+font:
+  bold:
+    family: CaskaydiaCove Nerd Font
+    style: bold
+
+  italic:
+    family: CaskaydiaCove Nerd Font
+    style: Italic
+
+  normal:
+    family: CaskaydiaCove Nerd Font
+    style: Regular
+
+  size: 11
+
+  offset:
+    y: 0
+
+  glyph_offset:
+    y: 0
+
+
+# Cursor configuration
+cursor:
+  blink_interval: 750
+  blink_timeout: 5
+  unfocused_hollow: true
+  style:
+    shape: Block
+    blinking: On
+  vi_mode_style:
+    shape: Block
+    blinking: On
+
+import:
+  - ~/.config/alacritty/themes/material-darker.yml
